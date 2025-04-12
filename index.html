@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-	</head>
+<html lang="es">
 
-	<body>
-		<header>
-			<div class="row">
-				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
-				</div>
-				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-			</div>
-			<div class="hero">
-				<h1>Ready for Action?</h1>
-				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
-				</div>
-			</div>
-		</header>
-		<section class="service grid-container">
-		</section>
-		<section class="about grid-container">
-		</section>
-		<section class="blog grid-container">
-		</section>
-		<section class="contact grid-container">
-			<div class="contact-form grid-item">
-				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
-				</div>
-				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
-					<input class="button" type="submit" value="Submit">
-				</form>
-			</div>
-			<div class="contact-form grid-item">
-			</div>
-		</section>
-		<section class="faq grid-container">
-		</section>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecno-PC</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="logo">
+                <img src="assets/logo-new.png" alt="tecno-pc_logo">
+            </div>
+            <ul class="main-nav">
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#computers">COMPUTERS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="hero" id="home">
+            <h1>Bienvenido a Tecno-PC</h1>
+            <div class="button">
+                <a href="#services" class="btn btn-one">Explorar más</a>
+                <a href="#computers" class="btn btn-two">Ver computadoras</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="service grid-container" id="services">
+        <div class="card grid-item">
+            <h3>Reparación de PC y Notebooks</h3>
+            <p>Diagnóstico, limpieza, cambio de partes, optimización de software y reinstalación de sistemas operativos.</p>
+        </div>
+        <div class="card grid-item">
+            <h3>Reparación de Impresoras y Plotters</h3>
+            <p>Servicio técnico, cambio de piezas, limpieza profunda y mantenimiento preventivo.</p>
+        </div>
+        <div class="card grid-item">
+            <h3>Colocación de Cámaras de Seguridad</h3>
+            <p>Instalación de cámaras IP, DVR, visualización remota, configuración de redes.</p>
+        </div>
+        <div class="card grid-item">
+            <h3>Reparación de Celulares</h3>
+            <p>Reemplazo de pantallas, baterías, conectores de carga y reparación de software.</p>
+        </div>
+    </section>
+
+    <!-- COMPUTERS -->
+    <section class="computers grid-container" id="computers">
+        <div class="computer-card grid-item">
+            <h3>PC de Escritorio Básica</h3>
+            <p>Ideal para tareas de oficina y uso cotidiano. Procesador Intel i3, 8GB RAM, 256GB SSD.</p>
+        </div>
+        <div class="computer-card grid-item">
+            <h3>PC Gamer</h3>
+            <p>Alto rendimiento con GPU dedicada. Ryzen 5, 16GB RAM, RTX 3060, SSD 512GB + HDD 1TB.</p>
+        </div>
+        <div class="computer-card grid-item">
+            <h3>Notebook Ultraliviana</h3>
+            <p>Portabilidad y eficiencia. Intel i5, 8GB RAM, SSD 512GB, pantalla Full HD.</p>
+        </div>
+        <div class="computer-card grid-item">
+            <h3>All-in-One</h3>
+            <p>Diseño todo en uno. Ideal para espacios reducidos. Pantalla 23", Intel i5, 8GB RAM.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact grid-container" id="contact">
+        <div class="contact-form grid-item">
+            <div class="contact-section-header">
+                <h2>¡Contactate con nosotros!</h2>
+            </div>
+            <form class="form">
+                <input type="text" name="fullname" placeholder="Nombre completo">
+                <input type="email" name="email" placeholder="Correo electrónico">
+                <input type="number" name="phonenumber" placeholder="Teléfono">
+                <textarea class="subject" name="subject" placeholder="Escribí tu mensaje..."></textarea>
+                <input class="button" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="contact-form grid-item">
+            <!-- Podés agregar un mapa o info adicional acá -->
+        </div>
+    </section>
+
+    <!-- FAQ (puede ir más contenido acá si querés) -->
+    <section class="faq grid-container">
+    </section>
+</body>
 
 </html>
+
+
+

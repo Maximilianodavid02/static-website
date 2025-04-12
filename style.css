@@ -1,166 +1,193 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-family: monospace;
+    font-family: monospace;
 }
 
 header {
-	background-image: url(assets/banner-bg.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-image: url(assets/banner-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-nav {
-	float: right;
-	list-style: none;
-	margin-top: 55px;
+    float: right;
+    list-style: none;
+    margin-top: 55px;
 }
 
 .main-nav li {
-	display: inline-block;
+    display: inline-block;
 }
 
 .main-nav li a {
-	color: white;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-family: "Roboto", sans-serif;
-	font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
 }
 
 .main-nav li.active a {
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .main-nav li a:hover {
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .logo {
-	width: 100px;
-	height: auto;
-	float: left;
-	margin-top: 30px;
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-top: 30px;
 }
 
 .row {
-	max-width: 1200px;
-	margin: auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .hero {
-	position: absolute;
-	top: 100px;
-	width: 100%;
+    position: absolute;
+    top: 100px;
+    width: 100%;
 }
 
 h1 {
-	font-family: "Roboto", sans-serif;
-	color: white;
-	text-transform: uppercase;
-	font-size: 70px;
-	text-align: center;
-	margin-top: 300px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 300px;
 }
 
 .button {
-	text-align: center;
-	margin-top: 50px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .btn {
-	font-family: "Roboto", sans-serif;
-	border: 1px solid white;
-	padding: 10px 30px;
-	color: white;
-	margin-right: 5px;
-	font-size: 13px;
-	text-transform: uppercase;
-	text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .btn-one {
-	background-color: darkorange;
+    background-color: darkorange;
 }
 
 .btn-two:hover {
-	background-color: darkorange;
-	transition: all 0.2s ease-in;
+    background-color: darkorange;
+    transition: all 0.2s ease-in;
 }
 
-.grid-container {
-	display: grid;
-  	grid-template-columns: auto auto;
-  	padding: 10px;
-}
-
-.grid-item {
-	padding: 20px;
-}
-
+/* Sección de Services */
 .service {
-	background-image: url(assets/img-banner@2x.png);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-color: #f9f9f9; /* Fondo blanco claro */
+    padding: 50px 0;
+    margin-bottom: 50px; /* Separación entre Services y Computers */
 }
 
-.about {
-	background-image: url(assets/DSC_0036.JPG);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-.blog {
-	background-image: url(assets/banner-texture@2x.png);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
+.service-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Sección de Computers */
+.computers {
+    background-color: #e2e2e2; /* Fondo gris claro */
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.computer-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.computer-card:hover {
+    transform: scale(1.03);
+}
+
+.computer-card h3 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.computer-card p {
+    color: #444;
+    font-size: 15px;
+}
+
+/* Añadí un borde entre las secciones para mayor separación */
+#services, #computers {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Contact Form */
 .contact {
-	background-image: url(assets/img-contact-form-bg.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
-
-.faq {
-	background-image: url(assets/img-prop-type@2x.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-image: url(assets/img-contact-form-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-form {
-	font-family: "Arial", "Helvetica", sans-serif;
-	margin: auto;
-	padding: 0 200px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    margin: auto;
+    padding: 0 200px;
 }
 
 .contact-section-header {
-	color: #282828;
-	font-family: "Roboto", sans-serif;
-	font-size: 25px;
-	margin-bottom: 20px;
+    color: #282828;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .form input, textarea {
-	font-size: 20px;
-	text-decoration: none;
-	outline: none;
-	width: 70%;
-	height: 60px;
-	padding-left: 10px;
-	border-radius: 6px;
-	border: none;
-	margin: 5px 0;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    width: 70%;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    margin: 5px 0;
 }
 
 .form input.button {
@@ -175,27 +202,15 @@ h1 {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
- }
+}
 
 input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
- }
+}
 
- .subject {
- 	height: 150px;
- 	color: black;
- }
-
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  	.blog {
-    	background-image: url(assets/banner-texture@2x.png) !important;
-  	}
-
-  	.faq {
-    	background-image: url(assets/img-prop-type@2x.jpg) !important;
-  	}
+.subject {
+    height: 150px;
+    color: black;
 }
